@@ -1,0 +1,214 @@
+:root {
+    --color-dark: #014b55;
+    --color-medium: #0b072e9d;
+    --color-light:#aef7beda;
+    --color-highlight: #9e0c0c;
+    --color-signal: var(--color-highlight);
+    --color-font: #502020;
+    --font-family: monospace;
+}
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+.backgroundimage {
+    display: flex;
+    position: fixed;
+    background-size: contain;
+    z-index: -10;
+}
+ 
+svg:hover {
+    filter: drop-shadow(0px 0px 12px var(--color-highlight)); 
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Aboreto';
+    font-size: 3.5rem;  
+    padding: 8px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Beau Rivage';
+    font-size: 2.75rem;
+    padding: 64px;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--color-highlight);
+    padding: 4px;
+}
+
+table {
+    text-align: left;
+}
+
+td {
+    vertical-align: top;
+}
+
+td:first-child {
+    width: 150px;
+}
+
+input {
+    background-color: var(--color-light);
+    color: var(--color-font);
+    border-color: var(--color-highlight);
+    border-width: 0 0 2px;
+    padding: 8px;
+}
+
+.InputName {
+    width: 150px;
+}
+
+.InputComment {
+    flex: 1;
+}
+
+::placeholder {
+    font-family: var(--font-family);
+    color: var(--color-dark);
+    opacity: 1
+}
+
+button {
+    background-color: #fffffe00;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+svg:hover {
+    filter: drop-shadow(0px 0px 12px var(--color-highlight)); 
+}
+
+body {
+    
+    font-family: var(--font-family);
+    color: var(--color-font);
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    }
+
+header, footer {
+    background-color: var(--color-light);
+    filter: drop-shadow(0px 0px 32px #ffffff);
+    width: 100%;
+    z-index: 1;
+
+}
+
+.PositionFixedHeader {
+    position: fixed;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-bottom-style: groove;
+    border-bottom-color: #08180c;
+    border-top-style: groove;
+    border-top-color: #00ccff86;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.ContainerHeaderFooter {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding: 16px;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 80px 80px 24px;
+}
+
+.ContainerBookCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.BookCard {
+    background-color: #00ccff91;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 6px var(--color-highlight);
+    width: 450px;
+}
+
+
+.LikeIcon {
+    fill: var(--color-font);
+    width: 32px;
+}
+
+.Liked {
+   fill: var(--color-signal); 
+}
+
+.DefaultText {
+    padding: 4px;
+}
+
+.SubmitIcon {
+    fill: var(--color-highlight);
+    width: 32px;
+}
+
+.ChildContainerBookCard {
+    border-top: solid 2px var(--color-highlight);
+    padding: 8px;
+    width: 100%;
+}
+
+.ContainerPriceLikes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ContainerLikes {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.Price {
+    color: var(--color-signal);
+    font-size: 24px;
+    align-self: center;
+}
+
+.ContainerInput {
+    display: flex;
+    padding-top: 8px;
+    gap: 4px;
+}
+
+.BookIcon {
+    fill: var(--color-dark);
+    padding: 8px;
+    width: 150px;
+    filter: drop-shadow(0px 0px 16px ); 
+}
+
+.IconHeaderFooter {
+    width: 56px;
+}
