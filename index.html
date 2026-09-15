@@ -1,39 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The bookstore</title>
-    <link rel="icon" type="image/x-icon" href="./assets/icons/books-icon.png" alt="bookstore logo">
-    <script src="script.js"></script>
-    <script type="text/" src=""></script>
-    <link type="text/javascript" src="scripts/templates.js">
-    <link type="text/javascript" src="scripts/book-infos.js">
+    <title>WORLD OF BOOKS</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/icons/books-icon.png" alt="Stefans Fotogram icon">
+    <script src="./scripts/templates.js"></script>
+    <script src="./scripts/book-infos.js"></script>
+    <script src="./script.js"></script>
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/overlay.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body onload="init()">
+    <img class="backgroundimage" src="./assets/img/booktunnel.webp">
     <header class="PositionFixedHeader">
         <div class="ContainerHeaderFooter">
-            <img class="BookIcon IconHeaderFooter" 
-                src="./assets/icons/books-mirror.png">
-                
-                
-            </svg>
-            <span>WORLD OF BOOKS</span>
-            <img class="BookIcon IconHeaderFooter" 
-                src="./assets/icons/books.png">
+            <img class="BookIcon IconHeaderFooter" src="./assets/icons/books-mirror.png">
+            <h1>World of Books</h1>
+            <img class="BookIcon IconHeaderFooter" src="./assets/icons/books.png">
         </div>
-        
     </header>
-    <main></main>
-    
+
+    <main>
+        <h2>The Bookstore</h2>
+        <div id="#BookCards" class="ContainerBookCards">
+        </div>
+    </main>
+
     <footer>
         <div class="ContainerHeaderFooter">
-            <img class="BookIcon IconHeaderFooter" 
-                src="./assets/icons/book.png">
+            <img class="BookIcon IconHeaderFooter" src="./assets/icons/book.png" viewBox="0 -960 960 960">
+            <path
+                d="M270-80q-45 0-77.5-30.5T160-186v-558q0-38 23.5-68t61.5-38l395-78v640l-379 76q-9 2-15 9.5t-6 16.5q0 11 9 18.5t21 7.5h450v-640h80v720H270Zm90-233 200-39v-478l-200 39v478Zm-80 16v-478l-15 3q-11 2-18 9.5t-7 18.5v457q5-2 10.5-3.5T261-293l19-4Zm-40-472v482-482Z" />
+            </svg>
         </div>
     </footer>
 </body>
+
 </html>
