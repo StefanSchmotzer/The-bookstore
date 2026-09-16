@@ -5,15 +5,15 @@ const pathBookIcon = 'path d="M270-80q-45 0-77.5-30.5T160-186v-558q0-38 23.5-68t
 const pathLikeIcon = 'path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Z"'
 const pathSubmitIcon = 'path d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z"'
 
-function getBookCard(indexBook, bookTitle, price, gender, author, published, genre, likes) {
+function getBookCard(indexBook, bookTitle, imagePath, price, gender, author, published, genre, likes) {
   return `
     <section class="BookCard">
       <h2>${bookTitle}</h2>
-      <svg class="BookIcon" 
-        ${xmlns}
-        ${viewBox}>
-        <${pathBookIcon}/>
-      </svg>
+
+      
+      <img class="BookIcon" src="${books.imagePath}">
+        
+      
 
       <div class="ChildContainerBookCard">
         <div class="ContainerPriceLikes">

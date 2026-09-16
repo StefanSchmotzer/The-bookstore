@@ -1,6 +1,7 @@
 let books = [
     {
       "name":  "Buch 1",
+      "imagePath": "./assets/img/booktunnel.webp",
       "author": "Maxine Mustermann",
       "gender": "female",
       "likes": 15,
@@ -33,6 +34,7 @@ let books = [
     },
     {
       "name": "Buch 2",
+      "imagePath": "./assets/img/books/best-seller.png",
       "author": "Lorenz Büffel",
       "gender": "male",
       "likes": 80,
@@ -44,6 +46,7 @@ let books = [
     },
     {
       "name": "Der Horizont der Liebe",
+      "imagePath": "./assets/img/books/best-seller.png",
       "gender": "female",
       "author": "Florentine Ferrant",
       "likes": 3480,
@@ -76,6 +79,7 @@ let books = [
     },
     {
       "name": "Der Hund, die Katze und die Maus",
+      "imagePath": "./assets/img/books/best-seller.png",
       "author": "Tomm und Jerry",
       "gender": "male",
       "likes": 750,
@@ -96,6 +100,7 @@ let books = [
     },
     {
       "name": "Die Macht der Sprache",
+      "imagePath": "./assets/img/books/best-seller.png",
       "author": "Sibille Hortensie",
       "gender": "female",
       "likes": 1300,
