@@ -1,7 +1,6 @@
 let books = [
     {
       "name":  "Das Leben eines besonderen Bullis",
-      "imagePath": "./assets/img/booktunnel.webp",
       "author": "Serafine Semmelbrösel",
       "gender": "female",
       "likes": 15,
@@ -34,7 +33,6 @@ let books = [
     },
     {
       "name": "Von der Schule ins Universum",
-      "imagePath": "./assets/img/books/",
       "author": "Ronny Rabenschwarz",
       "gender": "male",
       "likes": 80,
@@ -46,7 +44,6 @@ let books = [
     },
     {
       "name": "Liebe endet nicht am Horizont",
-      "imagePath": "./assets/img/books/best-seller.png",
       "gender": "female",
       "author": "Florentine Ferrant",
       "likes": 3427,
@@ -79,7 +76,6 @@ let books = [
     },
     {
       "name": "Agent Smith entdeckt die Welt",
-      "imagePath": "./assets/img/books/best-seller.png",
       "author": "Thomas A. Anderson",
       "gender": "male",
       "likes": 750,
@@ -104,7 +100,6 @@ let books = [
     },
     {
       "name": "Wenn Worte stärker sind als jede Waffe",
-      "imagePath": "./assets/img/books/best-seller.png",
       "author": "Sibille Sonnenlicht",
       "gender": "female",
       "likes": 1300,

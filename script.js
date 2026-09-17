@@ -5,7 +5,6 @@ const allComments = {};
 function init() {
     getStaticBooksDataFromBackend();
     renderStaticBookCards();
-
     getVariableBooksDataFromBackend(); 
     getLikeDataAndCommentsFromLocalStorage();
     renderAllVariableBooksData();
@@ -16,7 +15,6 @@ function getStaticBooksDataFromBackend() {
         const bookData = [];
 
         bookData.bookTitle = books[indexBook].name;
-        bookData.bookImage = books[indexBook].imagePath;
         bookData.price = books[indexBook].price.toFixed(2).toString().replace(".", ",") + " €";
         bookData.gender = (books[indexBook].gender == "female") ? "Autorin" : "Autor"; 
         bookData.author = books[indexBook].author;
@@ -33,7 +31,6 @@ function renderStaticBookCards() {
         bookCardsRef.innerHTML += getBookCard(
             indexBook, 
             allBooksData[indexBook].bookTitle,
-            allBooksData[indexBook].bookImage,
             allBooksData[indexBook].price, 
             allBooksData[indexBook].gender, 
             allBooksData[indexBook].author, 
