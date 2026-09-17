@@ -1,11 +1,11 @@
-const allBooksData= [];
-const allLikeData= {"likes":[], "liked":[]};
+const allBooksData = [];
+const allLikeData = { "likes": [], "liked": [] };
 const allComments = {};
 
 function init() {
     getStaticBooksDataFromBackend();
     renderStaticBookCards();
-    getVariableBooksDataFromBackend(); 
+    getVariableBooksDataFromBackend();
     getLikeDataAndCommentsFromLocalStorage();
     renderAllVariableBooksData();
 }
@@ -16,7 +16,7 @@ function getStaticBooksDataFromBackend() {
 
         bookData.bookTitle = books[indexBook].name;
         bookData.price = books[indexBook].price.toFixed(2).toString().replace(".", ",") + " €";
-        bookData.gender = (books[indexBook].gender == "female") ? "Autorin" : "Autor"; 
+        bookData.gender = (books[indexBook].gender == "female") ? "Autorin" : "Autor";
         bookData.author = books[indexBook].author;
         bookData.published = books[indexBook].publishedYear;
         bookData.genre = books[indexBook].genre;
@@ -29,19 +29,19 @@ function renderStaticBookCards() {
     const bookCardsRef = document.getElementById('#BookCards');
     for (let indexBook = 0; indexBook < allBooksData.length; indexBook++) {
         bookCardsRef.innerHTML += getBookCard(
-            indexBook, 
+            indexBook,
             allBooksData[indexBook].bookTitle,
-            allBooksData[indexBook].price, 
-            allBooksData[indexBook].gender, 
-            allBooksData[indexBook].author, 
-            allBooksData[indexBook].published, 
+            allBooksData[indexBook].price,
+            allBooksData[indexBook].gender,
+            allBooksData[indexBook].author,
+            allBooksData[indexBook].published,
             allBooksData[indexBook].genre);
     }
 }
 
 function getVariableBooksDataFromBackend() {
     getLikeDataFromBackend();
-    getBooksCommentsFromBackend(); 
+    getBooksCommentsFromBackend();
 }
 
 function getLikeDataFromBackend() {
@@ -60,7 +60,7 @@ function getBooksCommentsFromBackend() {
 
         for (let indexComment = 0; indexComment < books[indexBook].comments.length; indexComment++) {
             namesArray.push(books[indexBook].comments[indexComment].name);
-            commentsArray.push(books[indexBook].comments[indexComment].comment); 
+            commentsArray.push(books[indexBook].comments[indexComment].comment);
         }
         allComments[namesKey] = namesArray;
         allComments[commentsKey] = commentsArray;
@@ -91,7 +91,7 @@ function getCommentsFromLocalStorage() {
             allComments[indexBook + "_commentsNames"] = localCommentsNames;
             allComments[indexBook + "_comments"] = localComments;
         }
-    } 
+    }
 }
 
 function renderAllVariableBooksData() {
@@ -121,7 +121,7 @@ function renderComments(indexBook) {
     const commentsNames = allComments[indexBook + "_commentsNames"];
     const comments = allComments[indexBook + "_comments"];
 
-    if (comments.length > 0) {  
+    if (comments.length > 0) {
         for (let indexComment = 0; indexComment < comments.length; indexComment++) {
             const commentName = commentsNames[indexComment];
             const comment = comments[indexComment];
@@ -156,7 +156,7 @@ function addComment(indexBook) {
     const namesKey = indexBook + "_commentsNames";
     const commentsKey = indexBook + "_comments";
 
-    if(commentInputRef.value != "") {
+    if (commentInputRef.value != "") {
         nameInputRef.value != "" ? allComments[namesKey].push(nameInputRef.value) : allComments[namesKey].push("Anonym");
         allComments[commentsKey].push(commentInputRef.value);
     }
