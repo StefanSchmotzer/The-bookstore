@@ -27,9 +27,9 @@ h1 {
 h2 {
     text-align: center;
     font-family: 'Beau Rivage';
-    color: #05448d;
+    color: #009cda;
     font-size: 2.75rem;
-    filter: drop-shadow(0px 0px 4px #ffffff);
+    filter: drop-shadow(0px 0px 4px #050505);
     padding-top: 120px;
     padding-bottom: 50px;
 }
@@ -89,8 +89,9 @@ svg:hover {
 }
 
 body {
-    background-image: url("./assets/img/booktunnel.webp");
-    background-size: fit;
+    background-image: url("./assets/img/books.webp");
+    filter: brightness(75%);
+    background-size: cover;
     font-family: var(--font-family);
     color: var(--color-font);
     font-size: 16px;
@@ -222,10 +223,29 @@ main {
 @media (min-width: 1441px) {
 
     body {
-        width: 1920px;
         padding-left: 64px max(calc(50% - 720px), 64px);
         padding-right: 64px max(calc(50% - 720px), 64px);
         align-items: center;
+    }
+
+    h1 {
+        font-size: 5rem;
+        padding: 16px;
+    }
+
+    h2 {
+        font-size: 4rem;    
+        color: #ff0000;
+        filter: drop-shadow(0px 0px 8px #2bff00);
+        padding-top: 180px;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .ContainerBookCards {
+        max-width: 1920px;
     }
 }
 
