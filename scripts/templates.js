@@ -31,13 +31,14 @@ function getBookCard(indexBook, bookTitle, price, gender, author, published, gen
         </table>
       </div>
       <div class="ChildContainerBookCard">
-        <h3>Kommentare:</h3>
-        <p id="#DefaultText_${indexBook}"
-          class="DefaultText">
-        </p>
-        <table id="#Comments_${indexBook}">
-        </table>
-        <div class="ContainerInput">
+        <div class="readingcomments"> <h3>Kommentare:</h3>
+          <p id="#DefaultText_${indexBook}"
+            class="DefaultText">
+          </p>
+          <table id="#Comments_${indexBook}">
+          </table>
+        </div>
+          <div class="ContainerInput">
           <input id="#NameInput_${indexBook}"
             class="InputName" 
             type="text" 
