@@ -179,7 +179,7 @@ main {
     width: 32px;
 }
 .readingcomments {
-    max-height: 500px;
+    height: 350px;
     overflow: auto;
 }
 .ChildContainerBookCard {
@@ -261,6 +261,7 @@ main {
     .ContainerInput {
         flex-direction: column;
         align-items: center;
+        
     }
 
     td {
@@ -270,6 +271,13 @@ main {
 
     td:first-child {
         border-bottom: solid 1px;
+    }
+
+    .InputName {
+        width: 240px;
+    }
+    .InputComment {
+        width: 240px;
     }
 
     .IconHeaderFooter {
