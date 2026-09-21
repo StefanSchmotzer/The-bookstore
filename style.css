@@ -16,12 +16,6 @@
     font-size: 16px;
 }
 
-.backgroundimage {
-    display: flex;
-    position: fixed;
-    filter: brightness(50%);
-    z-index: -10;
-}
 
 h1 {
     text-align: center;
@@ -80,7 +74,7 @@ input {
 ::placeholder {
     font-family: var(--font-family);
     color: var(--color-dark);
-    opacity: 1
+    opacity: 1;
 }
 
 button {
@@ -95,6 +89,8 @@ svg:hover {
 }
 
 body {
+    background-image: url("./assets/img/booktunnel.webp");
+    background-size: fit;
     font-family: var(--font-family);
     color: var(--color-font);
     font-size: 16px;
@@ -227,6 +223,9 @@ main {
 
     body {
         width: 1920px;
+        padding-left: 64px max(calc(50% - 720px), 64px);
+        padding-right: 64px max(calc(50% - 720px), 64px);
+        align-items: center;
     }
 }
 
@@ -245,24 +244,6 @@ main {
         font-size: 1.25rem;
     }
 
-    .main {
-        width: 260px;
-        padding: 0px 0px 0px;
-    }
-
-    .BookCard {
-        width: 280px;
-    }
-
-    .book-img {
-        width: 240px;
-    }
-
-    .ContainerInput {
-        flex-direction: column;
-        align-items: center;
-        
-    }
 
     td {
         display: flex;
@@ -284,6 +265,53 @@ main {
         width: 45px;
     }
 }
+
+
+@media (max-width: 1048px) {
+    .main {
+        width: 400px;
+        padding: 0px 0px 0px;
+    }
+
+    .BookCard {
+        width: 390px;
+    }
+
+    .book-img {
+        width: 240px;
+    }
+        .InputName {
+        width: 160px;
+    }
+
+    .InputComment {
+        width: 160px;
+    }
+}
+
+@media (max-width: 828px) {
+    .main {
+        width: 400px;
+        padding: 0px 0px 0px;
+    }
+
+    .BookCard {
+        width: 280px;
+    }
+
+    .book-img {
+        width: 240px;
+    }
+
+    .InputName {
+        width: 90px;
+    }
+
+    .InputComment {
+        width: 90px;
+    }
+}
+
 
 @media (max-width: 355px) {
 
