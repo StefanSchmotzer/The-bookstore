@@ -4,7 +4,7 @@
   font-family: 'Akronim';
   font-style: normal;
   font-weight: 400;
-  src: url('/assets/fonts/akronim-v23-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('./assets/fonts/akronim-v23-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* aboreto-regular - latin */
@@ -13,7 +13,7 @@
   font-family: 'Aboreto';
   font-style: normal;
   font-weight: 400;
-  src: url('/assets/fonts/aboreto-v2-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('./assets/fonts/aboreto-v2-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* beau-rivage-regular - latin */
 @font-face {
@@ -21,7 +21,7 @@
   font-family: 'Beau Rivage';
   font-style: normal;
   font-weight: 400;
-  src: url('/assets/fonts/beau-rivage-v2-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('./assets/fonts/beau-rivage-v2-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 :root {
